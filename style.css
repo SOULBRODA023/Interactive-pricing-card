@@ -64,11 +64,108 @@ main {
 .pricing__component{
     background-color: white;
     margin-top:4.5rem;
+    padding:1rem;
 }
 .first__section{
-    padding-top:2rem;
+    padding-top:1rem; 
+    border-bottom:1px solid black;
+    padding-bottom:2.56rem;
 }
 .pricing__component h5{
     text-align:center;
     letter-spacing: 0.14rem;
+    width:18.5rem;
 }
+.slidercontainer {
+    width: 100%; 
+    margin-top:2.2rem;
+  }
+ 
+  .slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 90%; 
+    height: 0.5rem; 
+    background: hsl(224, 65%, 95%); 
+    outline: none;
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+  }
+  
+ 
+  .slider:hover {
+    opacity: 1; 
+  }
+.slider::-moz-range-thumb {
+    width: 2.5rem; 
+    height: 2.5rem;
+    background: hsl(174, 86%, 45%); 
+    cursor: pointer; 
+    border:none;
+    border-radius:50%;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 2.5rem; 
+    height: 2.5rem;
+    background: hsl(174, 86%, 45%); 
+    cursor: pointer; 
+    border:none;
+    border-radius:50%;
+  }
+  .display__price{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:1rem;
+    margin-top:2.5rem;
+  }
+  .display__price h1{
+    font-size:2rem;
+  }
+  .toggle__time{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:1rem;
+    font-size:0.8rem;
+    margin-top:2.4rem;
+  }
+  .yearly{
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+  }
+  .yearly span{
+    padding:0.1rem 0.5rem;
+    border-radius: 01rem;
+    background-color: hsl(14, 92%, 95%);
+    font-weight:600;
+    color:hsl(15, 100%, 70%);
+    font-size:0.6rem
+  }
+  .second__section{
+    display: grid;
+    justify-content: center;
+    padding-top:1.6rem;
+    font-size:0.8rem;
+  }
+  .first, .second, .third{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:1rem;
+  }
+  .second,.third{
+    padding-top:0.7rem;
+  }
+  .button{
+    margin-left:auto;
+    padding:0.5rem 3rem;
+    border-radius: 1rem;
+    margin-top:2.2rem;
+    font-weight:600;
+    color:white;
+  }

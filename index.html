@@ -34,25 +34,36 @@
         <section class="pricing__component">
           <div class="first__section">
             <h5>100K PAGEVIEWS</h5>
-            <div class="slider">
-
+            <div class="slidercontainer">
+              <input type="range" name="price slider" id="slider" min="5" max="50" class="slider">
             </div>
-            <h1>$ 16.00</h1>
-            <p>/ month</p>
+            <div class="display__price">
+              <h1>$ 16.00</h1>
+              <p>/ month</p>
+            </div>
+           
             <div class="toggle__time">
               <div class="monthly">Monthly Billing</div>
-              <div class="toggle__switch"></div>
+              <div class="toggle__switch">
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                </label>
+              </div>
               <div class="yearly"><p>yearly Billing</p><span>-25%</span></div>
             </div>
           </div>
           <div class="second__section">
             <div class="first">
+              <img src="./images/icon-check.svg" alt="">
               <p>Unlimited websites</p>
             </div>
             <div class="second">
+              <img src="./images/icon-check.svg" alt="">
               <p> 100% data ownership</p>
             </div>
             <div class="third">
+              <img src="./images/icon-check.svg" alt="">
               <p>Email reports</p>
             </div>
             <button class="button"><p>Start my trial</p></button>
