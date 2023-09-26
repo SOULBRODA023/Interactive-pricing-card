@@ -5,7 +5,6 @@
     margin:0;
     box-sizing: border-box;
 }
-
   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 
 body{
@@ -15,16 +14,17 @@ body{
     font-size:0.9325rem;
     font-family: 'Manrope', sans-serif;
     background: whitesmoke;
+    display:grid;
+    justify-content: center;
 }
 img{
     display:block;
     max-width:100%;
 }
 .container{
-    height:100%;
-    width:100%;
     display: grid;
     justify-content:center;
+    position:relative;
 }
 main {
     display:block;
@@ -40,9 +40,14 @@ main {
    height:100%;
    z-index: -1;
 }
-.background-image img{
+.background{
     height:25rem;
     border-bottom-left-radius: 12rem;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: -1;
 }
 .overlay-pattern{
     position:absolute;
@@ -53,7 +58,6 @@ main {
     display:grid;
     justify-content: center;
     margin-top:5.5rem;
-
     max-width:25rem;
 }
 .content p{
@@ -169,12 +173,12 @@ main {
   }
   .button{
     margin-left:auto;
-    border-radius: 1rem;
-    margin-top:2.2rem;
+    border-radius: 1.5rem;
+    margin-top:1.6rem;
     font-weight:600;
     color:white;
     border:none;
-    width:10rem;
+    width:11rem;
     height:2.5rem;
     text-align:center;
   }

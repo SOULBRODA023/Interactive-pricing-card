@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="./index.js"></script>
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,14 +15,15 @@
   </style>
 </head>
 <body>
-
+  <div class="background-image"><img src="./images/bg-pattern.svg" alt="background color" class="background"></div>
+  <div class="container" role="contentinfo">
   <section class="background__images">
-    <div class="background-image"><img src="./images/bg-pattern.svg" alt="background color"></div>
+ 
     <div class="overlay-pattern"><img src="./images/pattern-circles.svg" alt="patterned circle"></div>
   </section>
 
 
-  <div class="container" role="contentinfo">
+ 
 
     <main class="main">
      
@@ -33,12 +34,14 @@
 
         <section class="pricing__component">
           <div class="first__section">
+            
             <h5>100K PAGEVIEWS</h5>
+            
             <div class="slidercontainer">
-              <input type="range" name="price slider" id="slider" min="5" max="50" class="range__slider">
+              <input type="range" name="price slider" id="slider" min="0" max="32" step="1" class="range__slider">
             </div>
             <div class="display__price">
-              <h1>$ 16.00</h1>
+              <h1 class="display__amount">0.00</h1>
               <p>/ month</p>
             </div>
            
@@ -54,6 +57,7 @@
             </div>
           </div>
           <div class="second__section">
+            <section class="CTA">
             <div class="first">
               <img src="./images/icon-check.svg" alt="">
               <p>Unlimited websites</p>
@@ -66,6 +70,7 @@
               <img src="./images/icon-check.svg" alt="">
               <p>Email reports</p>
             </div>
+          </section>
             <button class="button"><p>Start my trial</p></button>
           </div>
         </section>
@@ -73,21 +78,7 @@
 
     </main>
   </div>
-  <!--
   
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-   -->
    <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
