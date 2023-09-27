@@ -208,6 +208,7 @@ main {
     font-weight:600;
     color:var(--PaleBlue);
     border:none;
+    cursor:pointer;
     width:11rem;
     height:2.5rem;
     text-align:center;
@@ -308,6 +309,7 @@ input:checked + .slider:before {
     display:flex;
     align-items:center;
     gap:0.4rem;
+    
   }
   .the__amount h1{
     font-size:2.5rem;
@@ -350,5 +352,9 @@ input:checked + .slider:before {
   width:90%;
   margin-left:auto;
   margin-right:auto;
+}
+.yearly span{
+  width:5rem;
+  align-items: left;
 }
 }
